@@ -151,6 +151,25 @@
           surveyCtaPostscript: 'This activity will open in a separate window'
         },
         allowedOnMobile: true
+      },
+      {
+        identifier: 'user-research-banner-drill',
+        surveyType: 'url',
+        frequency: 1,
+        startTime: new Date('November 16, 2018').getTime(),
+        endTime: new Date('February 16, 2019').getTime(),
+        url: 'https://signup.take-part-in-research.service.gov.uk/?utm_campaign=&utm_source=Other&utm_medium=other&t=HMRC&id=84',
+        templateArgs: {
+          title: 'Help us improve our services, join our User Research Panel. This link opens in a new tab.',
+          surveyCta: 'Join our User Research Panel',
+          surveyCtaPostscript: 'This will open a short survey on another website'
+        },
+        activeWhen: {
+          path: [
+            '^/guidance/money-laundering-regulations-supervised-business-register$'
+          ]
+        },
+        allowedOnMobile: true
       }
     ],
 
