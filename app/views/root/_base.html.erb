@@ -7,7 +7,7 @@
 <% end %>
 
 <% content_for :head do %>
-  <%= render :partial => 'stylesheet', :locals => { :css_file => local_assigns[:css_file] || 'static' } %>
+  <%= render partial: 'stylesheet', locals: { css_file: local_assigns[:css_file] || 'static' } %>
 <% end %>
 
 <% content_for :inside_header do %>
@@ -99,8 +99,8 @@
   <% end %>
 <% end %>
 <% content_for :footer_support_links do %>
-  <%= render :partial => "footer_support_links" %>
+  <%= render partial: "footer_support_links" %>
 <% end %>
 <% content_for :body_end do %>
-  <%= render :partial => 'javascript', :locals => { :js_file => local_assigns[:js_file] || 'application' } %>
+  <%= render partial: 'javascript', locals: { js_file: local_assigns[:js_file] || 'application' } %>
 <% end %>

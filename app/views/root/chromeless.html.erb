@@ -1,7 +1,7 @@
 <% content_for :page_title, content_for?(:title) ? yield(:title) : "GOV.UK - The best place to find government services and information" %>
 
 <% content_for :head do %>
-  <%= render :partial => 'stylesheet', :locals => { :css_file => 'header-footer-only' } %>
+  <%= render partial: 'stylesheet', locals: { css_file: 'header-footer-only' } %>
 <% end %>
 
 <% @omit_header = true %>
@@ -13,8 +13,8 @@
 <% end %>
 
 <% content_for :footer_support_links do %>
-  <%= render :partial => 'footer_support_links' %>
+  <%= render partial: 'footer_support_links' %>
 <% end %>
 <% content_for :body_end do %>
-  <%= render :partial => 'javascript', :locals => { :js_file => 'header-footer-only' } %>
+  <%= render partial: 'javascript', locals: { js_file: 'header-footer-only' } %>
 <% end %>
