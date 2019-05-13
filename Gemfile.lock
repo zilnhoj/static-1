@@ -1,6 +1,18 @@
 GIT
+  remote: https://github.com/alphagov/govuk_app_config.git
+  revision: c83ffc6938911d0d3cc8d95f3e322d08b3492168
+  branch: test-new-cookies-banner
+  specs:
+    govuk_app_config (1.16.0)
+      aws-xray-sdk (~> 0.10.0)
+      logstasher (~> 1.2.2)
+      sentry-raven (~> 2.7.1)
+      statsd-ruby (~> 1.4.0)
+      unicorn (~> 5.4.0)
+
+GIT
   remote: https://github.com/alphagov/govuk_publishing_components.git
-  revision: eb55b6f6e2e1177741af2a1a90560ee3722efdc5
+  revision: 9f9f74cea73b11bbdbe31c88e37e0d4fccb505aa
   branch: add-new-cookie-banner
   specs:
     govuk_publishing_components (16.16.0)
@@ -76,7 +88,7 @@ GEM
     binding_of_caller (0.8.0)
       debug_inspector (>= 0.0.1)
     builder (3.2.3)
-    capybara (3.19.0)
+    capybara (3.19.1)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
@@ -116,12 +128,6 @@ GEM
       rubocop (~> 0.64)
       rubocop-rspec (~> 1.28)
       scss_lint
-    govuk_app_config (1.16.1)
-      aws-xray-sdk (~> 0.10.0)
-      logstasher (~> 1.2.2)
-      sentry-raven (~> 2.7.1)
-      statsd-ruby (~> 1.4.0)
-      unicorn (~> 5.4.0)
     govuk_frontend_toolkit (8.1.0)
       railties (>= 3.1.0)
       sass (>= 3.2.0)
@@ -184,7 +190,7 @@ GEM
       rake
     mocha (1.8.0)
       metaclass (~> 0.0.1)
-    multipart-post (2.1.0)
+    multipart-post (2.1.1)
     netrc (0.11.0)
     nio4r (2.3.1)
     nokogiri (1.10.3)
@@ -248,14 +254,14 @@ GEM
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     rouge (3.3.0)
-    rubocop (0.68.1)
+    rubocop (0.69.0)
       jaro_winkler (~> 1.5.1)
       parallel (~> 1.10)
-      parser (>= 2.5, != 2.5.1.1)
+      parser (>= 2.6)
       rainbow (>= 2.2.2, < 4.0)
       ruby-progressbar (~> 1.7)
-      unicode-display_width (>= 1.4.0, < 1.6)
-    rubocop-rspec (1.32.0)
+      unicode-display_width (>= 1.4.0, < 1.7)
+    rubocop-rspec (1.33.0)
       rubocop (>= 0.60.0)
     ruby-progressbar (1.10.0)
     rubyzip (1.2.2)
@@ -274,7 +280,7 @@ GEM
     scss_lint (0.58.0)
       rake (>= 0.9, < 13)
       sass (~> 3.5, >= 3.5.5)
-    selenium-webdriver (3.142.1)
+    selenium-webdriver (3.142.2)
       childprocess (>= 0.5, < 2.0)
       rubyzip (~> 1.2, >= 1.2.2)
     sentry-raven (2.7.4)
@@ -305,7 +311,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.6)
-    unicode-display_width (1.5.0)
+    unicode-display_width (1.6.0)
     unicorn (5.4.1)
       kgio (~> 2.6)
       raindrops (~> 0.7)
@@ -334,7 +340,7 @@ DEPENDENCIES
   gds-api-adapters (~> 59.2)
   govuk-content-schema-test-helpers (~> 1.6)
   govuk-lint (~> 3.11)
-  govuk_app_config (~> 1.16.0)
+  govuk_app_config!
   govuk_frontend_toolkit (~> 8.1.0)
   govuk_publishing_components!
   govuk_template (= 0.26.0)
