@@ -13,6 +13,7 @@ gem 'redis', "~> 4.1.1"
 gem 'govuk_publishing_components', :git => 'https://github.com/alphagov/govuk_publishing_components.git', :branch => 'add-new-cookie-banner'
 # gem 'govuk_app_config', '~> 1.16.0'
 gem 'govuk_app_config', git: 'https://github.com/alphagov/govuk_app_config.git', branch: 'test-new-cookies-banner'
+gem 'rack-cors'
 
 group :development do
   gem 'image_optim', '0.26.3'
