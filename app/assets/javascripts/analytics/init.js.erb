@@ -3,7 +3,12 @@
 
   var consentCookie = JSON.parse(window.GOVUK.getCookie("cookie_policy"))
 
+  // Disable analytics by default
+  // This will be reversed below, if the consent cookie says usage cookies are allowed
+  window['ga-disable-UA-26179049-1'] = true;
+
   if (!consentCookie || consentCookie["usage"]) {
+    window['ga-disable-UA-26179049-1'] = false;
 
     // Load Google Analytics libraries
     GOVUK.StaticAnalytics.load();
