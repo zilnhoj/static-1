@@ -10,7 +10,8 @@ gem 'sass-rails', "5.0.7"
 gem 'asset_bom_removal-rails', '~> 1.0.0'
 gem 'nokogiri', "~> 1.10"
 gem 'redis', "~> 4.1.1"
-gem 'govuk_publishing_components', '~> 16.20'
+# gem 'govuk_publishing_components', '~> 16.29'
+gem 'govuk_publishing_components', path: '../govuk_publishing_components'
 gem 'govuk_app_config', '~> 1.18.1'
 
 group :development do
