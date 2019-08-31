@@ -161,8 +161,8 @@
     sendToGa(name + '.require', 'linker')
 
     // Define which domains to autoLink.
-    sendToGa('linker:autoLink', [domain])
-    sendToGa(name + '.linker:autoLink', [domain])
+    sendToGa('linker:autoLink', domain)
+    sendToGa(name + '.linker:autoLink', domain)
 
     sendToGa(name + '.set', 'anonymizeIp', true)
     sendToGa(name + '.set', 'displayFeaturesTask', null)
