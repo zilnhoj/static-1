@@ -34,4 +34,5 @@ Rails.application.configure do
   config.assets.quiet = true
 
   config.eager_load = false
+  config.sass.inline_source_maps = true
 end

@@ -95,6 +95,8 @@
       var fn = tracker[method]
 
       if (typeof fn === 'function') {
+console.log("ARGS BEING APPLIED: "+ JSON.stringify(args))
+console.log("IS THE DOMAIN ARG AN ARRAY?: " + Array.isArray(args[2]))
         fn.apply(tracker, args)
       }
     }
@@ -146,6 +148,10 @@
    Add a beacon to track a page in another GA account on another domain.
    */
   Analytics.prototype.addLinkedTrackerDomain = function (trackerId, name, domain) {
+    console.log("")
+    console.log("================================START")
+    console.log("DOMAIN: " + domain + " WTF THIS PARAMETER ISN'T EVEN USED!!!")
+    console.log("ARGUMENTS: " + JSON.stringify(arguments))
     this.sendToTrackers('addLinkedTrackerDomain', arguments)
   }
 

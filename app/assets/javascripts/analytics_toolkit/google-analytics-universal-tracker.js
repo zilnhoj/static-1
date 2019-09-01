@@ -152,6 +152,9 @@
                   on creation of the linked domain.
   */
   GoogleAnalyticsUniversalTracker.prototype.addLinkedTrackerDomain = function (trackerId, name, domain, sendPageView) {
+console.log("")
+console.log("WHAT IS THE DOMAIN WITHIN THE UNIVERSAL TRACKER?: " + domain)
+console.log("IS DOMAIN STILL AN ARRAY?: " + Array.isArray(domain))
     sendToGa('create',
              trackerId,
              'auto',
