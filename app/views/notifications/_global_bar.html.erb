@@ -9,8 +9,6 @@
   close_date = DateTime.new(2019,11,28,11,25,00) # DateTime after which the bar will automatically disappear, or false to unset
 -%>
 
-<%= DateTime.now() %>
-
 <% if show_global_bar && (!close_date || DateTime.now() < close_date) %>
   <% content_for :head do %>
     <!--[if gt IE 7]><!-->
