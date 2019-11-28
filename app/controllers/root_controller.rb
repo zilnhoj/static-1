@@ -1,3 +1,5 @@
+require 'date'
+
 class RootController < ApplicationController
   layout false
 
@@ -14,6 +16,8 @@ class RootController < ApplicationController
     homepage
   ).freeze
   def template
+    @date = DateTime.now()
+
     if NON_LAYOUT_TEMPLATES.include?(params[:template])
       render action: params[:template]
     else
