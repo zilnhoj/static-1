@@ -1,8 +1,6 @@
 // PRINT STYLESHEET COMPILER
 $govuk-compatibility-govuktemplate: true;
-$govuk-use-legacy-palette: false;
-
-@import "govuk_publishing_components/components/print/feedback";
+$govuk-use-legacy-palette: true;
 
 // STYLEGUIDE
 // Mixins to be shared across gov.uk sites. Anything set in these
