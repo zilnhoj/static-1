@@ -1,7 +1,7 @@
 PATH
   remote: ../govuk_publishing_components
   specs:
-    govuk_publishing_components (21.29.1)
+    govuk_publishing_components (21.36.1)
       gds-api-adapters
       govuk_app_config
       kramdown
